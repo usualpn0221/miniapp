@@ -1,0 +1,15 @@
+<h1>Users#show</h1>
+
+<div class="contents row" >
+    <p><%= @name %>さんのブログ一覧</p>
+    <% @blogs.each do |blog| %>
+       <%= render partial: "blogs/blog", locals: { blog: blog } %>
+    <% end %>
+</div>
+
+
+
+
+
+
+ <a href="/">戻る</a>

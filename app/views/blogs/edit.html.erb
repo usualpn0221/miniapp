@@ -1,0 +1,16 @@
+<h1>Blogs#edit</h1>
+
+<div class="contents row">
+  <div class="container">
+    <%= form_tag("/blogs/#{@blog.id}", method: :patch) do %>
+      <h3>
+        編集する
+      </h3>
+      <textarea cols="50" name="title" placeholder="text" rows="50"><%= @blog.title %></textarea>
+      <textarea class="bloginvent" cols="50" name="content" placeholder="text" rows="50"><%= @blog.content %></textarea>
+      <input type="submit" value="SENT">
+    <% end %>
+  </div>
+</div>
+
+ <a href="/">戻る</a>
